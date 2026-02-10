@@ -62,9 +62,9 @@ header {
 
 nav a {
     color: #f68026;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 45px;
     font-family: "proxima-nova", sans-serif;
     font-weight: 800;
     font-style: italic;
@@ -74,17 +74,21 @@ nav a {
 
 nav a:hover {
     letter-spacing: .5px;
-    text-align: center;
+    text-align: left;
     color: #E74302;
+    transition: 0.5s;
 }
 
 nav {
     background-color: #606972;
     overflow: hidden;
-    border-bottom: 2px solid #344d5a;
-   
     padding: 0 0;
     text-align: center;
+}
+
+nav img {
+    float: left;
+    width: 7%;
 }
 
 /* body */
@@ -92,10 +96,24 @@ body {
     display: block;
     margin: 0;
     font-family: Noto Sans, sans-serif;
+    background-color: #cdd4d8;
+}
+
+body p {
+    color: black;
+    overflow: hidden;
+    font-family: Noto Sans, sans-serif;
+    text-decoration: none;
 }
 
 /* Heading */
 h1, h2, h3, h4, h5, h6 {
     font-style:italic;
     color: #344d5a;
+}
+
+/* images */
+.header-bg img {
+   width: 100%;
+   border-top: 5px solid #E74302;
 }

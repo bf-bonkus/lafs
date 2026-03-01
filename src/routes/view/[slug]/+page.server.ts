@@ -18,7 +18,7 @@ export const actions = {
             { status: 0, item: params.slug, name: name, email: email, tel: tel }
         );
 
-        redirect(303, "/")
+        redirect(303, "/?redirect=success")
         return { success: true }
     },
 } satisfies Actions;

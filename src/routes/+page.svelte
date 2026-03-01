@@ -3,7 +3,7 @@
     import skyridge_exterior from "$lib/assets/skyridge_exterior.jpeg";
 </script>
 
-<div style="text-align: center;"><h1>Lost and Found</h1>
+<div style="text-align: center;">
     <p>Welcome to the <strong><em>unofficial</em></strong> Skyridge lost and found website!</p>
 </div>
 

@@ -18,7 +18,7 @@
     </label>
     <br>
     <br>
-
+    <button>Submit Report</button>
     </div>
 </form>
 

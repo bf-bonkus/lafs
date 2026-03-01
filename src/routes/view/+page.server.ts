@@ -1,13 +1,12 @@
 import type { PageServerLoad } from './$types';
 import { db } from '$lib/server/db/index';
+import { items } from '$lib/server/db/schema';
+import { eq } from 'drizzle-orm';
 
 export const load: PageServerLoad = async ({ params }) => {
-    const items = await db.query.items.findMany({
-        columns: {
-            claimed: false,
-        },
-    });
+    const unclaimed_items = await db.select().from(items).where(eq(items.claimed, false));
+
     return {
-        items: items
+        items: unclaimed_items
     };
 };

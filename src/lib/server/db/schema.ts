@@ -11,9 +11,9 @@ export const items = sqliteTable('items', {
 
 export const claims = sqliteTable('claims', {
 	id: text('id').primaryKey().$defaultFn(() => crypto.randomUUID()),
+	status: integer('status').notNull(), // 0: submitted, 1: rejected, 2: accepted
 	item: text('item').notNull(), // id of item
-	name: text('name').notNull(), // in case of stalking
-	tel: integer('tel'),
-	email: text('email'),
-	status: integer('status').notNull(),
+	name: text('name').notNull(), // in case we need to do some sleuthing
+	email: text('email').notNull(),
+	tel: text('tel'),
 });

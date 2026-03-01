@@ -1,6 +1,6 @@
 import type { Actions } from './$types';
-import * as schema from '$lib/server/db/schema';
-import * as db from '$lib/server/db/index';
+import { items } from '$lib/server/db/schema';
+import { db, addImage } from '$lib/server/db/index';
 
 export const actions = {
     report: async  ({ request }) => {
@@ -8,9 +8,9 @@ export const actions = {
         const desc = data.get("desc") ?? "";
 
         const img = data.get("img");
-        const imgStr = await db.addImage(img)
+        const imgStr = await addImage(img);
 
-        await db.db.insert(schema.items).values(
+        await db.insert(items).values(
             { desc: desc, img: imgStr, claimed: false }
         );
 

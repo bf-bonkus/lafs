@@ -9,16 +9,16 @@
 <h2>Have a found item to report? Report it here and take it to the Lost and Found.</h2>
 <form method="POST" enctype="multipart/form-data" action="?/report">
     <div class="report">
-    <label>
-<textarea name="desc" placeholder="Item Description, Date, and where it was Found"></textarea>
-    </label>
-    <label>
-        <h3 style="text-align: center;">Item Image:</h3>
-        <input type="file" name="img" />
-    </label>
-    <br>
-    <br>
-        <button>Submit</button>
+        <label>
+            <textarea name="desc" placeholder="Item Description, Date, and where it was Found"></textarea>
+        </label>
+        <label>
+            <h3 style="text-align: center;">Item Image:</h3>
+            <input type="file" name="img" />
+        </label>
+        <br>
+        <br>
+            <button>Submit Report</button>
     </div>
 </form>
 

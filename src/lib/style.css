@@ -178,6 +178,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .search {
     text-align: center;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    padding: 8px 8px 8px 36px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: url('src/Images/mg1.png') no-repeat 8px center;
+    background-size: 18px 18px;
+    font-size: 14px;
+    background-color: #ffffff;
 }
 
 /* Item Submission */
@@ -210,5 +222,55 @@ textarea {
 }
 
 input {
-    border-radius: 2px;
+    align-items: center;
+    float: center;
+    padding-left: 70px;
+}
+
+textarea {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+    /* Toast */
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -120px;
+    background-color: #606972;
+    color: #E74302;
+    text-align: center;
+    border-radius: 40px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 20%;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 2s, 2.5s;
+        animation: fadein 0.5s, fadeout 2s, 2.5s;
+    }
+    
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

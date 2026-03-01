@@ -22,6 +22,7 @@
 		"@types/better-sqlite3": "^7.6.13",
 		"@types/node": "^24",
 		"@types/sharp": "^0.31.1",
+		"@zerodevx/svelte-toast": "^0.9.6",
 		"drizzle-kit": "^0.31.8",
 		"drizzle-orm": "^0.45.1",
 		"svelte": "^5.49.2",

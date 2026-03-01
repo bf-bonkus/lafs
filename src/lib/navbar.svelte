@@ -6,8 +6,8 @@
     <img src={falcon} alt="logo">
     <img src={falcon} alt="logo" style="float: right;">
     <h1>Skyridge Lost and Found</h1>
-    <a href="/">Home</a> &nbsp &nbsp;
-    <a href="/report">Report Lost Item</a> &nbsp &nbsp;
-    <a href="/view">View Found Items</a> &nbsp &nbsp;
+    <a href="/">Home</a>  &nbsp;
+    <a href="/report">Report Lost Item</a> &nbsp;
+    <a href="/view">View Found Items</a> &nbsp;
     <a href="/contact">Reviews</a>
 </nav>

@@ -6,24 +6,24 @@
 
 
 <div style="text-align: center;">
-<h2>Have a found item to report? Report it here and take it to the Lost and Found.</h2>
+<h2>Report found items here:</h2>
 <form method="POST" enctype="multipart/form-data" action="?/report">
     <div class="report">
-        <label>
-            <textarea name="desc" placeholder="Item Description, Date, and where it was Found"></textarea>
-        </label>
-        <label>
-            <h3 style="text-align: center;">Item Image:</h3>
-            <input type="file" name="img" />
-        </label>
-        <br>
-        <br>
-            <button>Submit Report</button>
+    <label>
+<textarea name="desc" placeholder="Item Description, Date, and where it was found"></textarea>
+    </label>
+    <label>
+        <h3 style="text-align: center;">Image of the item is required. Upload it here:</h3>
+        <input type="file" name="img" />
+    </label>
+    <br>
+    <br>
+
     </div>
 </form>
 
 {#if form?.success}
-<p>Item reported successfully</p>
+<p>Item submitted! <br> Now give the item to the lost and found at the front office.</p>
 {/if}
 
 
@@ -34,3 +34,5 @@
         height: 150px;
     }
 </style>
+
+

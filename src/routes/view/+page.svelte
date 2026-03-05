@@ -10,7 +10,7 @@
 </section>
 
 <div class="search">
-    <input bind:value={query} type="text" placeholder="Search for Lost Items Here" style="width: 250px; height:30px; text-size: 26px;"/>
+    <input bind:value={query} type="text" placeholder="Search for Lost Items Here" style="width: 250px; height:30px; text-size: 26px; padding-left:"/>
 <br></div>
 
 <div class="items">

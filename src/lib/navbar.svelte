@@ -8,6 +8,5 @@
     <h1>Skyridge Lost and Found</h1>
     <a href="/">Home</a>  &nbsp;
     <a href="/report">Report Lost Item</a> &nbsp;
-    <a href="/view">View Found Items</a> &nbsp;
-    <a href="/contact">Reviews</a>
+    <a href="/view">View Found Items</a>
 </nav>

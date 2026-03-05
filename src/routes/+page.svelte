@@ -6,9 +6,14 @@
     import skyridge_exterior from "$lib/assets/skyridge_exterior.jpeg";
 </script>
 
+
+
 {#if data.redirect}
-    <p>Submission Successful!</p>
+   <div style="text-align: right;">
+     <p class="success">Your claim has been sent to the administrators. <br> They will reach out to you within 2 business days.</p>
+    </div>
 {/if}
+
 
 <div style="text-align: center;">
     <p>Welcome to the <strong><em>unofficial</em></strong> Skyridge lost and found website!</p>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { PageProps } from './$types';
 
+
     let { data, form }: PageProps = $props();
 </script>
 
@@ -8,23 +9,22 @@
     <h3>Submission Succeeded!</h3>
 {/if}
 
-<img src={data.item?.img} alt="User-submitted item" />
-<p>{data.item?.desc}</p>
+<span class="claim"><div class="claim-border">
+<img src={data.item?.img} alt="User-submitted item"/></div>
+<h2>{data.item?.desc}</h2>
 
 <form method="POST" action="?/claim">
-    <ul>
-        <li><label>
-            Name:
-            <input type="text" name="name" required />
-        </label></li>
-        <li><label>
-            Email:
-            <input type="email" name="email" required/>
-        </label></li>
-        <li><label>
-            Phone number (optional):
-            <input type="tel" name="tel" />
-        </label></li>
-    </ul>
+   <!-- <ul>-->
+        <!--<li>--><label>
+            <input type="text" name="name" required  placeholder="Name"/>
+        </label><!--</li>--><br>
+        <!--<li>--><label>
+            <input type="email" name="email" required placeholder="Email"/>
+        </label><!--</li>--><br>
+        <!--<li style="padding-left: 2px;">--><label>
+            <input type="tel" name="tel" placeholder="Phone"/>
+        </label><!--</li>--><br>
+    <!--</ul>-->
     <button>Submit Claim</button>
 </form>
+</span>

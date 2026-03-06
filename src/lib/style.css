@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 8px 8px 44px;
     border: 1px solid #ffffff;
     border-radius: 40px;
-    background: url('src/Images/mg1.png') no-repeat 16px center;
+    background: url('$lib/assets/search_icon.png') no-repeat 16px center;
     background-size: 18px 18px;
     font-size: 14px;
     background-color: #ffffff;

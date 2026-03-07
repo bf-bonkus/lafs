@@ -9,9 +9,11 @@
     <h3>Submission Succeeded!</h3>
 {/if}
 
+<h2>{data.item?.desc}</h2>
 <span class="claim"><div class="claim-border">
 <img src={data.item?.img} alt="User-submitted item"/></div>
-<h2>{data.item?.desc}</h2>
+<br>
+<br>
 
 <form method="POST" action="?/claim">
    <!-- <ul>-->

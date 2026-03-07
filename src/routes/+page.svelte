@@ -6,6 +6,7 @@
     import skyridge_exterior from "$lib/assets/skyridge_exterior.jpeg";
 </script>
 
+<title>SHS Lost and Found</title>
 
 
 {#if data.redirect}

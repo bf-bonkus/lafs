@@ -28,11 +28,3 @@
 
 
 </div>
-<style>
-    textarea {
-        width: 300px;
-        height: 150px;
-    }
-</style>
-
-

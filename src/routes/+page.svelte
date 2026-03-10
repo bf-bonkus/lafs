@@ -27,5 +27,5 @@
 </div>
 
 <div class="footer">
-<p style="color: #FFFFFF;">Images are copyright of Noun Project<p>
+<p style="color: #FFFFFF;">Images are copyright of Noun Project</p>
 </div>
